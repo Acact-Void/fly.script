@@ -1,0 +1,32 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Acact-Void/background_script/refs/heads/main/bg')))()
+
+local Window = OrionLib:MakeWindow({Name = "ZingMod", HidePremium = false, SaveConfig = true, ConfigFolder = "dxl_bf"})
+
+local Tab = Window:MakeTab({
+	Name = "tool",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Fix Lag",
+	Callback = function()
+        repeat wait(5) until game:IsLoaded()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+end
+})
+
+Tab:AddButton({
+	Name = "Keyboard",
+	Callback = function()
+        repeat wait(5) until game:IsLoaded()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end
+})
+
+Tab2:AddButton({
+	Name = "Fly",
+	Callback = function()
+        repeat wait(5) until game:IsLoaded()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/Fly.lua"))()
+end
+})
