@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Acact-Void/background_script/refs/heads/main/bg')))()
 
-local Window = OrionLib:MakeWindow({Name = "ZingMod", HidePremium = false, SaveConfig = true, ConfigFolder = "dxl_bf"})
+local Window = OrionLib:MakeWindow({Name = "AcactVoid", HidePremium = false, SaveConfig = true, ConfigFolder = "dxl_bf"})
 
 local Tab = Window:MakeTab({
 	Name = "tool",
